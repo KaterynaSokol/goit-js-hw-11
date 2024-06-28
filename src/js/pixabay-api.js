@@ -1,4 +1,4 @@
-function getPictures(userInput) {
+export function getPictures(userInput) {
   const BASE_URL = 'https://pixabay.com/api/';
 
   const params = new URLSearchParams({
