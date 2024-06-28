@@ -7,7 +7,20 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <script type="module" src="./main.js"></script>
-  </body>
+    <body>
+      <section>
+        <form id="search-form" class="search-form">
+          <input
+            class="input"
+            id="search-input"
+            type="text"
+            placeholder="Search images..."
+          />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <div id="gallery" class="gallery"></div>
+    <!-- <script type="module" src="./main.js"></script> -->
+    <script type="module" src="./js/pixabay-api.js"></script>
+    <!-- <script type="module" src="./js/render-functions.js"></script> -->
 </html>
