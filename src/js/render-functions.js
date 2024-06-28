@@ -46,32 +46,32 @@ export function picturesTemplate(data) {
   return data
     .map(
       img => `<li class="card">
-//             <a href="${img.largeImageURL}" class="big gallery-link">
-//               <img
-//                 src="${img.webformatURL}"
-//                 alt="${img.tags}"
-//                 title="${img.tags}"
-//                 class="card-img"
-//             /></a>
-//            <div class="info"> <ul class="card-title">
-//               <li class="card-info">
-//                 <h2 class="card-text">Likes</h2>
-//                 <p class="card-text-value">${img.likes}</p>
-//               </li>
-//               <li class="card-info">
-//                 <h2 class="card-text">Views</h2>
-//                 <p class="card-text-value">${img.views}</p>
-//               </li>
-//               <li class="card-info">
-//                 <h2 class="card-text">Comments</h2>
-//                 <p class="card-text-value">${img.comments}</p>
-//               </li>
-//               <li class="card-info">
-//                 <h2 class="card-text">Downloads</h2>
-//                 <p class="card-text-value">${img.downloads}</p>
-//               </li>
-//             </ul> </div
-//           </li>`
+             <a href="${img.largeImageURL}" class="big gallery-link">
+               <img
+                 src="${img.webformatURL}"
+                 alt="${img.tags}"
+                 title="${img.tags}"
+                 class="card-img"
+             /></a>
+            <ul class="card-title">
+               <li class="card-info">
+                 <h2 class="card-text">Likes</h2>
+                 <p class="card-text-value">${img.likes}</p>
+             </li>
+               <li class="card-info">
+                 <h2 class="card-text">Views</h2>
+                 <p class="card-text-value">${img.views}</p>
+               </li>
+               <li class="card-info">
+                 <h2 class="card-text">Comments</h2>
+                 <p class="card-text-value">${img.comments}</p>
+               </li>
+               <li class="card-info">
+                 <h2 class="card-text">Downloads</h2>
+                 <p class="card-text-value">${img.downloads}</p>
+               </li>
+             </ul> 
+           </li>`
     )
     .join('');
 }
