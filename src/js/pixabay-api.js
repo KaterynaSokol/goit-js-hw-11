@@ -11,7 +11,10 @@ export function getPictures(userInput) {
 
   const url = `${BASE_URL}?${params}`;
 
-  return fetch(url)
-    .then(result => result.json())
-    .catch(err => console.log(err));
+  return fetch(url).then(result => {
+    if (!result.ok) {
+      throw new Error(result.status);
+    }
+    return result.json();
+  });
 }
